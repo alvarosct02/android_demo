@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.alvarosct.demo.navigationcomponent.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_sampleFragment"
+            app:destination="@id/sampleFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sampleDialogFragment"
+            app:destination="@id/sampleDialogFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sampleBottomSheetFragment"
+            app:destination="@id/sampleBottomSheetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sampleFragment"
+        android:name="com.alvarosct.demo.navigationcomponent.SampleFragment"
+        tools:layout="@layout/fragment_sample" />
+
+    <dialog
+        android:id="@+id/sampleDialogFragment"
+        android:name="com.alvarosct.demo.navigationcomponent.SampleDialogFragment"
+        tools:layout="@layout/fragment_sample" />
+
+    <dialog
+        android:id="@+id/sampleBottomSheetFragment"
+        android:name="com.alvarosct.demo.navigationcomponent.SampleBottomSheetFragment"
+        tools:layout="@layout/fragment_sample" />
+</navigation>

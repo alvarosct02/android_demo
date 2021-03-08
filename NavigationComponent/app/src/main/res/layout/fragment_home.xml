@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SampleFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Navigation Types"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <Button
+        android:id="@+id/bt_sample_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment" />
+
+    <Button
+        android:id="@+id/bt_sample_dialog_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialog" />
+
+    <Button
+        android:id="@+id/bt_sample_bottom_sheet_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bottom Sheet" />
+
+    <Button
+        android:id="@+id/bt_sample_bottom_sheet_fragment_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bottom Sheet (No Fix)" />
+
+</LinearLayout>
